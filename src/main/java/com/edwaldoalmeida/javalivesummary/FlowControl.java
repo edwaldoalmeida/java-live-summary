@@ -1,4 +1,4 @@
-package com.edwaldoalmeida;
+package com.edwaldoalmeida.javalivesummary;
 
 public class FlowControl {
     public static void main(String[] args) {

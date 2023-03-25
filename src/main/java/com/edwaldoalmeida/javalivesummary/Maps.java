@@ -1,4 +1,4 @@
-package com.edwaldoalmeida;
+package com.edwaldoalmeida.javalivesummary;
 
 import java.util.*;
 
