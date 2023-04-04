@@ -9,8 +9,7 @@ public class FileHandling {
         String fileName = "test.txt";
         
         // reading and printing to the console
-        FileReader fileReader = new FileReader(fileName);
-        try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 System.out.println("Line: " + line);
