@@ -8,9 +8,7 @@ import java.io.IOException;
 public class FileHandlingRead {
     public static void main(String[] args) {
         String originalFilename = "README.md";
-        // String redactedFilename = "redacted-" + originalFilename;
         String absoluteOriginalPath = new File(originalFilename).getAbsolutePath();
-        // String absoluteRedactedPath = new File(redactedFilename).getAbsolutePath();
         
         // reading and printing to the console using try-with
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(absoluteOriginalPath))) {
