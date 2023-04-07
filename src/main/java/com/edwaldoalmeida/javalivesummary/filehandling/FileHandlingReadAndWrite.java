@@ -10,10 +10,10 @@ import org.apache.commons.lang3.StringUtils;
 
 public class FileHandlingReadAndWrite {
     public static void main(String[] args) {
-        String originalFilename = "README.md";
-        String redactedFilename = "redacted-" + originalFilename;
-        String absoluteOriginalPath = new File(originalFilename).getAbsolutePath();
-        String absoluteRedactedPath = new File(redactedFilename).getAbsolutePath();
+        File originalFilename = new File("README.md");
+        File redactedFilename = new File("redacted-" + originalFilename);
+        String absoluteOriginalPath = originalFilename.getAbsolutePath();
+        String absoluteRedactedPath = redactedFilename.getAbsolutePath();
         
         // Array redactedWordsArray = new Array(); // TODO: stopped here!
         String[] redactedWords = {"in"};
