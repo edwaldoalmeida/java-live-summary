@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class FileHandlingRead {
     public static void main(String[] args) {
-        String originalFilename = "README.md";
-        String absoluteOriginalPath = new File(originalFilename).getAbsolutePath();
+        File originalFilename = new File("README.md");
+        String absoluteOriginalPath = originalFilename.getAbsolutePath();
         
         // reading and printing to the console using try-with
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(absoluteOriginalPath))) {
