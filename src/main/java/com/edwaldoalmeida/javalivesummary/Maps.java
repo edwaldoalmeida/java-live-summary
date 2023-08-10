@@ -1,6 +1,7 @@
 package com.edwaldoalmeida.javalivesummary;
 
 import java.util.*;
+import java.util.Arrays;
 
 public class Maps {
     public static void main(String[] args) {
