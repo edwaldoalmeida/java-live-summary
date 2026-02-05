@@ -14,6 +14,10 @@ public class Stringz {
 
         // reformat log line
         String reformatted = message + " (" + logLevel + ")";
+
+        // from int to String
+        int i = 10;
+        String iString = Integer.toString(i);
     }
 
 }
