@@ -1,4 +1,4 @@
-package com.edwaldoalmeida.javalivesummary;
+package com.edwaldoalmeida.javalivesummary.collections;
 
 import java.util.*;
 import java.util.Arrays;
