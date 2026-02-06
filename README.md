@@ -4,7 +4,7 @@ These are my Java summaries organized in a way that I can run them in debug mode
 
 How to use:
 1. Clone this repo
-2. Open the `java` directory in your IDE (I use IntelliJ IDEA)
+2. Open the `java` directory in your preferred IDE
 3. Go to the desired area, eg: API fetching (`apifetching` dir)
 4. Set breakpoint
 5. Run in Debug Mode
