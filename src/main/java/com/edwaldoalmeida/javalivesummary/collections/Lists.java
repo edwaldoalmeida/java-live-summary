@@ -8,6 +8,14 @@ public class Lists {
     public static void main(String[] args) {
         System.out.println("Hello Lists!");
 
+        // Immutable
+        List<String> emptyList = List.of();
+        List<Integer> singleInteger = List.of(1);
+        List<Boolean> threeBooleans = List.of(true,false,true);
+        List<Object> listWithMultipleTypes = List.of("String", 1, true);
+        // why can't do .add() ???
+
+
         // creating the list
         // List that accepts any type of object
 //        List myList = new ArrayList();
@@ -33,6 +41,9 @@ public class Lists {
         System.out.println("This is the list: " + myList);
         System.out.println("This is the 2nd element: " + myList.get(1));
         System.out.println("This is the last element: " + myList.get(listSize - 1));
+        
+        boolean containTest10 = myList.contains("test10");
+        System.out.println("This list contains an element 'test10'? " + containTest10);
 
         // iterating over the list (enhanced 'for')
         // only possible in strong typed ArrayLists
@@ -50,7 +61,7 @@ public class Lists {
         int nextElement = centerOfTheList + 1;
 
         // creating a sublist
-        List<String> sl = myList.subList(centerOfTheList, nextElement + 1); // lastIndex not included!
+        List<String> subList = myList.subList(centerOfTheList, nextElement + 1); // lastIndex not included!
 
         // removing element by index
         myList.remove(0);
