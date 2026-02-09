@@ -1,7 +1,6 @@
 package com.edwaldoalmeida.javalivesummary.collections;
 
 import java.util.*;
-import java.util.Arrays;
 
 public class Maps {
     public static void main(String[] args) {
@@ -15,48 +14,49 @@ public class Maps {
         myHashMap.put("I", "eu");
         myHashMap.put("nothing", "nada");
 
+        myHashMap.put("I", "Eu"); // updates the key with I
+
         Integer size = myHashMap.size();
+        System.out.println("Current size: " + size);
 
         // inserting from lists
-        String[] wordsEng = {"this", "is", "a", "test"};
-        String[] wordsPt = {"isto", "eh", "um", "teste"};
-        for (int i = 0; i < wordsEng.length; i++) {
-            myHashMap.put(wordsEng[i], wordsPt[i]);
+        String[] wordsEnglish = {"this", "is", "a", "test"};
+        String[] wordsPortuguese = {"isto", "eh", "um", "teste"};
+        for (int i = 0; i < wordsEnglish.length; i++) {
+            myHashMap.put(wordsEnglish[i], wordsPortuguese[i]);
         }
         size = myHashMap.size();
+        System.out.println("New size: " + size);
 
         // iterating / accessing the map (regular/old method)
-        for (int i = 0; i < wordsEng.length; i++) {
-            String t = myHashMap.get(wordsEng[i]);  // gets the value corresponding to that key
-            System.out.println(t);
+        for (int i = 0; i < wordsEnglish.length; i++) {
+            String wordPortuguese = myHashMap.get(wordsEnglish[i]);  // gets the value corresponding to that key
+            System.out.println("English word: " + wordsEnglish[i] + ", Portuguese word: " + wordPortuguese);
         }
-
-        // checking if a key or value exist
-        boolean result1 = myHashMap.containsKey(wordsEng[0]);  // true
-        boolean result2 = myHashMap.containsKey(wordsEng[0].toUpperCase());  // false
-        boolean result3 = myHashMap.containsValue("isto");  // true
-
-        // creating another datastructures with the Map content
-        Set<String> keys = myHashMap.keySet();
-        Collection<String> values = myHashMap.values();
-        Set<Map.Entry<String,String>> entries = myHashMap.entrySet();
-        System.out.printf("Map: %s%nKeys: %s%nValues: %s%nEntries: %s%n",
-                myHashMap, keys, values, entries);
-
         // iterating / accessing the map (like Python's 'for')
         for(String key : myHashMap.keySet()) {
-            // String k = key;
             System.out.println(key);
         }
         for(String value : myHashMap.values()) {
-            // String v = value;
             System.out.println(value);
         }
         for(Map.Entry<String,String> pair : myHashMap.entrySet()) {
             String k = pair.getKey();
             String v = pair.getValue();
-            System.out.printf("'%s' ==> %s%n", k, v);
+            System.out.printf("%s ==> %s%n", k, v);
         }
+
+        // checking if a key or value exist
+        boolean containsThisLowercase = myHashMap.containsKey("this");  // true
+        boolean containsThisUppercase = myHashMap.containsKey("THIS");  // false
+        boolean containsIstoValue = myHashMap.containsValue("isto");  // true
+
+        // creating another data structures with the Map content
+        Set<String> keys = myHashMap.keySet(); // keys will point to myHashMap
+        Collection<String> values = myHashMap.values(); // values will point to myHashMap
+        Set<Map.Entry<String,String>> entries = myHashMap.entrySet(); // entries will point to myHashMap
+        System.out.printf("Map: %s%nKeys: %s%nValues: %s%nEntries: %s%n",
+                myHashMap, keys, values, entries);
 
         // deleting
         myHashMap.remove("nothing");  // by key
@@ -67,8 +67,9 @@ public class Maps {
         myHashMap.clear();
         isEmpty = myHashMap.isEmpty();  // true
 
-        // creating a TreeMap
-        Map<String, Integer> myTreeMap = new TreeMap<>();  // allows ordering
+
+        // creating a TreeMap (allows ordering)
+        Map<String, Integer> myTreeMap = new TreeMap<>();
 
         // inserting data
         String[] tNames = {"one", "two", "three", "four"};
