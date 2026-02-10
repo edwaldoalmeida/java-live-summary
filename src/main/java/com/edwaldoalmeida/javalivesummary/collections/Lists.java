@@ -45,6 +45,8 @@ public class Lists {
         boolean containTest10 = myList.contains("test10");
         System.out.println("This list contains an element 'test10'? " + containTest10);
 
+        String firstContent = myList.get(0);
+
         // iterating over the list (enhanced 'for')
         // only possible in strong typed ArrayLists
         for (String word : myList) {  // Python: `for word in myList:`
