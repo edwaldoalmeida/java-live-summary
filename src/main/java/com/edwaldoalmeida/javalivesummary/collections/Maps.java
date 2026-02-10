@@ -8,7 +8,7 @@ public class Maps {
 
         // creating
         Map<String, String> myHashMap = new HashMap<>();
-        Map<String, String> myLinkedHasMap = new LinkedHashMap<>();  // preserves insertion or access order
+        // Map<String, String> myLinkedHasMap = new LinkedHashMap<>();  // preserves insertion or access order
 
         // inserting one-by-one
         myHashMap.put("I", "eu");
@@ -40,6 +40,7 @@ public class Maps {
         for(String value : myHashMap.values()) {
             System.out.println(value);
         }
+        // the way to search for a value to get its key
         for(Map.Entry<String,String> pair : myHashMap.entrySet()) {
             String k = pair.getKey();
             String v = pair.getValue();
@@ -47,14 +48,14 @@ public class Maps {
         }
 
         // checking if a key or value exist
-        boolean containsThisLowercase = myHashMap.containsKey("this");  // true
-        boolean containsThisUppercase = myHashMap.containsKey("THIS");  // false
+        boolean containsLowercaseThis = myHashMap.containsKey("this");  // true
+        boolean containsUppercaseThis = myHashMap.containsKey("THIS");  // false
         boolean containsIstoValue = myHashMap.containsValue("isto");  // true
 
         // creating another data structures with the Map content
-        Set<String> keys = myHashMap.keySet(); // keys will point to myHashMap
-        Collection<String> values = myHashMap.values(); // values will point to myHashMap
-        Set<Map.Entry<String,String>> entries = myHashMap.entrySet(); // entries will point to myHashMap
+        Set<String> keys = myHashMap.keySet(); // `keys` will point to myHashMap
+        Collection<String> values = myHashMap.values(); // `values` will point to myHashMap
+        Set<Map.Entry<String,String>> entries = myHashMap.entrySet(); // `entries` will point to myHashMap
         System.out.printf("Map: %s%nKeys: %s%nValues: %s%nEntries: %s%n",
                 myHashMap, keys, values, entries);
 
