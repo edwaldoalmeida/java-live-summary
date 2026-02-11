@@ -29,10 +29,22 @@ public class Sets {
         set.remove(2); // returns true
         set.size(); // 1
 
-        // adding the whole list to the Set
+        // adding a whole list to the Set
         List<Integer> myList = List.of(4,5,6);
         set.addAll(myList);
 
+        // iterating with forEach
+        set.forEach(entry -> System.out.println(entry));
+
+        // intersection between two Sets
+        Set<String> setA = new HashSet<>(Set.of("A", "B"));
+        Set<String> setB = new HashSet<>(Set.of("B", "C"));
+        setA.retainAll(setB);
+
+        // union between two Sets
+        Set<String> setD = new HashSet<>(Set.of("D", "E"));
+        Set<String> setE = new HashSet<>(Set.of("E", "F"));
+        setD.addAll(setE);
 
 
         System.exit(1);
