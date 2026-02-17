@@ -34,9 +34,25 @@ public class FlowControl {
         // for ("modern")
 
 
+        // switch statements
+        // a switch statement can only compare the value of a primitive or string expression against pre-defined constant values
+        String choice = "first";
+        switch (choice) {
+            case "second":
+                System.out.println("Choose second");
+                break;
+            case "first":
+                System.out.println("Choose first");
+                break;
+            case "third":
+                System.out.println("Choose third");
+                break;
+            default:
+                System.out.println("None choosen");
+                break;
+        }
 
-
-
+        System.exit(1);
     }
 
 }
