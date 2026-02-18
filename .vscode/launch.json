@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EnumCustomProperties",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumCustomProperties.EnumCustomProperties",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
             "name": "EnumSingleton",
             "request": "launch",
             "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumSingletonPattern.EnumSingleton",
