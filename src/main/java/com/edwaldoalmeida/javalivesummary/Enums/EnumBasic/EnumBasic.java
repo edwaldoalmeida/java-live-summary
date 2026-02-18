@@ -1,8 +1,8 @@
-package com.edwaldoalmeida.javalivesummary.Enums;
+package com.edwaldoalmeida.javalivesummary.Enums.EnumBasic;
 
 // An Enum type is a special data type that enables for a variable to be set of predefined constants (always in uppercase letters).
 
-public class Enums {
+public class EnumBasic {
     public static void main(String[] args) {
         System.out.println("Hello Enums!");
 

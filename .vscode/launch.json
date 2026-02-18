@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EnumBasic",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumBasic.EnumBasic",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
             "name": "Enums",
             "request": "launch",
             "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.Enums",

@@ -1,4 +1,4 @@
-package com.edwaldoalmeida.javalivesummary.Enums;
+package com.edwaldoalmeida.javalivesummary.Enums.EnumBasic;
 
 public enum DaysOfWeek {
     SUNDAY,

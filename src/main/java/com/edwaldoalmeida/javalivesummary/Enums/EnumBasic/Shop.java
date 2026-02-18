@@ -1,4 +1,4 @@
-package com.edwaldoalmeida.javalivesummary.Enums;
+package com.edwaldoalmeida.javalivesummary.Enums.EnumBasic;
 
 public class Shop {
     public String getOpeningHours(DaysOfWeek dayOfWeek) {
