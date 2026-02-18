@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Inheritance",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.inheritance.Inheritance",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
             "name": "EnumCustomProperties",
             "request": "launch",
             "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumCustomProperties.EnumCustomProperties",
