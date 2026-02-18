@@ -20,6 +20,11 @@ public class EnumBasic {
         String mondayName = monday.name();
         int mondayOrdinal = monday.ordinal();
 
+        // get all enum values
+        for (DaysOfWeek dow : DaysOfWeek.values()) {
+            System.out.println(dow);
+        }
+
         System.exit(1);
     }
 }
