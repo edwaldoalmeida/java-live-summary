@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EnumSingleton",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumSingletonPattern.EnumSingleton",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
+            "name": "EnumStrategyPattern",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumStrategyPattern.EnumStrategyPattern",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
             "name": "EnumBasic",
             "request": "launch",
             "mainClass": "com.edwaldoalmeida.javalivesummary.Enums.EnumBasic.EnumBasic",
