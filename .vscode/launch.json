@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Interfaces",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.interfaces.basic.Interfaces",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
+            "name": "MoviePicker",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.interfaces.withComparable.MoviePicker",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
+            "name": "MoviePicker",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.interfaces.MoviePicker",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
+            "name": "Interfaces",
+            "request": "launch",
+            "mainClass": "com.edwaldoalmeida.javalivesummary.interfaces.Interfaces",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
             "name": "Inheritance",
             "request": "launch",
             "mainClass": "com.edwaldoalmeida.javalivesummary.inheritance.Inheritance",
