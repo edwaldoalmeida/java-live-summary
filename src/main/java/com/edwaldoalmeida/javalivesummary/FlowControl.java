@@ -52,6 +52,16 @@ public class FlowControl {
                 break;
         }
 
+        choice = "blah";
+
+        // another way
+        switch (choice) {
+            case "second" -> System.out.println("Choose second");
+            case "first" -> System.out.println("Choose first");
+            case "third" -> System.out.println("Choose third");
+            default -> System.out.println("None choosen");
+        }
+
         System.exit(1);
     }
 
